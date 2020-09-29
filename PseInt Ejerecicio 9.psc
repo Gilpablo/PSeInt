@@ -4,8 +4,12 @@ Algoritmo ejercicio_9
 	Leer num;
 	
 	si (num==0) Entonces
-		Escribir "el número no es par ni impar";
+		Escribir "El número no es par ni impar";
 	SiNo
-		
+		Si num mod 2=0 Entonces
+			Escribir "El numero es par";
+		SiNo
+			Escribir "El numero es impar";
+		FinSi
 	FinSi
 FinAlgoritmo
