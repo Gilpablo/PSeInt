@@ -1,6 +1,6 @@
 Algoritmo ejercicio_15
 	
-	Definir num, suma, contador Como Real;
+	Definir num, suma, contador, media Como Real;
 	
 	Leer num;
 	suma=0
@@ -11,8 +11,10 @@ Algoritmo ejercicio_15
 		suma=suma+num
 		contador=contador+1
 		
+		
 	Fin Mientras
-	
-	Escribir "f"
+
+
+	Escribir media
 	
 FinAlgoritmo
