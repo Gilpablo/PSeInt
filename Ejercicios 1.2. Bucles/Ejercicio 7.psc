@@ -1,15 +1,18 @@
 Algoritmo bucles_ej_7
-	Definir num, suma_par, suma_impar Como Entero;
+	Definir i, suma_par, suma_impar Como Entero;
 	
-	num=1
 	suma_par=0
 	suma_impar=0
 	
-	Mientras num<=100 Hacer
-		Escribir num;
-		num=num+1
-	Fin Mientras
-
-
+	Para i=0 Hasta 100 Con Paso 1 Hacer
+		Escribir i;
+		Si i%2==0 Entonces
+			suma_par=suma_par+i
+		SiNo
+			suma_impar=suma_impar+i
+		FinSi
+	Fin Para
+	Escribir "La suma de los numeros pares es: " suma_par;
+	Escribir "La suma de los numeros impares es " suma_impar;
 	
 FinAlgoritmo
