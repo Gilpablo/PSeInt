@@ -1,4 +1,4 @@
-Algoritmo bucles_ej_10
+Algoritmo cadenas_ej_1
 	
 	Definir frase, letra, nombre_final Como Caracter;
 	Definir i Como Entero;
