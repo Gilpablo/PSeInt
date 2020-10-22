@@ -3,7 +3,8 @@ Algoritmo cadenas_ej_1
 	Definir frase, letra, nombre_final Como Caracter;
 	Definir i Como Entero;
 	
-	frase= "Pepito";
+	Escribir "Dime un nombre";
+	Leer frase;
 	nombre_final= "";
 	
 	
