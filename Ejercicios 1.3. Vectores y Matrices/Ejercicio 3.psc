@@ -1,31 +1,30 @@
-SubProceso  mostrarArrays ( longitud_nombres, nombres, TAMANIO )
+SubProceso  mostrarDatos ( longitud_nombres, nombres, tam )
 	
-	Para i<-1 Hasta TAMANIO Con Paso 1 Hacer
-		escribir "La longitud del nombre ",nombres[i]," es de ",longitud_nombres[i]
+	Para i=1 Hasta tam Con Paso 1 Hacer
+		escribir "La longitud del nombre ",nombres[i]," es de ",longitud_nombres[i];
 	Fin Para
 	
 Fin SubProceso
 Algoritmo ejercicio2
 
-	Definir longitud_nombres como entero
-	Definir nombres como cadena
-	Definir TAMANIO como entero
+	Definir longitud_nombres como entero;
+	Definir nombres Como Caracter;
+	Definir tam como entero;
+	
+	escribir "Introduce el tamaño";
+	leer tam;
 	
 	
-	escribir "Introduce el tamaño de los arrays"
-	leer TAMANIO    
-	
-	
-	Dimension longitud_nombres[TAMANIO]
-	Dimension nombres[TAMANIO]
+	Dimension longitud_nombres[tam];
+	Dimension nombres[tam];
 	
 
-	Para i<-1 Hasta TAMANIO Con Paso 1 Hacer
-		escribir "Introduce un nombre para la posicion ",i      
-		leer nombres[i]
-		longitud_nombres[i]<-Longitud(nombres[i])
+	Para i=1 Hasta tam Con Paso 1 Hacer
+		escribir "Introduce un nombre para la posicion ",i ;     
+		leer nombres[i];
+		longitud_nombres[i]=Longitud(nombres[i]);
 	Fin Para    
 	
-	mostrarArrays(longitud_nombres, nombres, TAMANIO)
+	mostrarDatos(longitud_nombres, nombres, TAMANIO);
 
 FinAlgoritmo

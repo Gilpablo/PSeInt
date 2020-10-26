@@ -1,22 +1,24 @@
 Algoritmo ejercicio1
-	Definir num como entero
-    Definir tam como entero
-    Definir med Como Entero
-    tam=10
+	Definir num, tam, sum, i Como entero;
+	Definir med Como Real;
 	
+	tam=10;
+	sum=0;	
     
-    Dimension num[tam]
+    Dimension num[tam];
 	
-
-    Para i=1 Hasta tam Con Paso 1 Hacer
-        Escribir "Introduce un valor para la posición ",i       
-        leer num[i]
+    Para i=0 Hasta tam-1 Con Paso 1 Hacer
+        Escribir "Introduce un valor:";  
+        leer num[i];
     Fin Para    
 	
     
-    Para i=1 Hasta tam Con Paso 1 Hacer
-        med=med+num[i]
+    Para i=0 Hasta tam-1 Con Paso 1 Hacer
+        sum=sum+num[i];
     FinPara
 	
+	med=sum/tam;
 	Escribir med;
+	
 FinAlgoritmo
+
